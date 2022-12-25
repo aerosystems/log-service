@@ -14,7 +14,7 @@ import (
 
 // authServiceURL is the url to the authentication service. Since we're using
 // Docker, we specify the appropriate entry from docker-compose.yml
-const authServiceURL = "http://auth-service/v1/signin"
+const authServiceURL = "http://auth-service/v1/login"
 
 // JSONPayload is the type for JSON posted to this API
 type JSONPayload struct {
