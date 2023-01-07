@@ -130,9 +130,8 @@ func (app *Config) LoginPagePost(w http.ResponseWriter, r *http.Request) {
 		Data    struct {
 			ID        int       `json:"id"`
 			Email     string    `json:"email"`
-			FirstName string    `json:"first_name"`
-			LastName  string    `json:"last_name"`
 			Active    int       `json:"active"`
+			Role      string    `json:"role"`
 			CreatedAt time.Time `json:"created_at"`
 			UpdatedAt time.Time `json:"updated_at"`
 		} `json:"data"`
